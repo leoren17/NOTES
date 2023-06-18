@@ -28,3 +28,11 @@ Flexbox:
   gap: 1rem;
 }
 ```
+
+```
+.container img {
+  max-width: 40em;
+  object-fit: cover;
+  border-radius: 1em;
+}
+```
