@@ -36,3 +36,10 @@ Flexbox:
   border-radius: 1em;
 }
 ```
+
+### JS Notes
+```
+str.length
+str[0]
+ReactDOM.render(JSX, document.getElementById('root'))
+```
