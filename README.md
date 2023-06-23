@@ -52,3 +52,11 @@ let lastElement = myArray.pop();        // ["new0", "ele0"]  // lastElement = "e
 let firstElement = myArray.shift();     // ["ele0"]          // firstElement = "new0"
 myArray.unshift(firstElement);          // ["new0", "ele0"]
 ```
+Function:
+```
+function sum(a, b) {
+  console.log("Hello World");
+  return a + b;
+}
+let three = sum(1, 2);  
+```
