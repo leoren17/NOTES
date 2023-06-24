@@ -60,3 +60,7 @@ function sum(a, b) {
 }
 let three = sum(1, 2);  
 ```
+Queue:
+```
+
+```
