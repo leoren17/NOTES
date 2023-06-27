@@ -66,3 +66,6 @@ Queue:
 ```
 
 ```
+Arrow Function:
+```
+```
