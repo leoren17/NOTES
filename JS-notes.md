@@ -1,3 +1,42 @@
+### OOP
+
+### Arrow Function (ES6):
+```
+const myFunc = () => {
+  let a = 123;
+  return a;
+}
+const myFunc = () => 123;
+
+// set default value to parameters
+const myFunc = (name="anon") => "hi, " + name;
+
+// using the rest parameter for arbituary number of arguments
+const myFunc = (...args) => args.length;
+
+// the spread operator expands iterables in places where zero or more arguments are expected (into comma-separated list)
+const nums = [1,2,3];
+console.log(sum(...nums));
+console.log(sum.apply(null, nums));
+
+// Destructuring statement
+const { prop1, prop2 } = obj;
+// Assign new varialbes names
+const { prop1: newProp1, prop2: newProp2 } = obj;
+
+// Destructure Arrays 
+const [a, b, , d] = [d, c, b, a];  // a=d, b=c, d=a
+
+// w/ the rest operator
+const [,, ...removeFirstTwo] = [1, 2, 3, 4, 5, 7];  // removeFirstTwo = [3, 4, 5, 7]
+```
+```
+// create strings with Template Literals
+const greeting = `Hello, my name is ${person.name}!
+I am ${person.age} years old.`;
+
+```
+---
 ### Random
 - var declares a variable globally or locally to an entire function regardless of block scope
 - let has the additional feature that it is declared with block scope (only available in the block)
@@ -78,39 +117,4 @@ function sum(a, b) {
 let three = sum(1, 2);  
 ```
 ---
-Arrow Function (ES6):
-```
-const myFunc = () => {
-  let a = 123;
-  return a;
-}
-const myFunc = () => 123;
 
-// set default value to parameters
-const myFunc = (name="anon") => "hi, " + name;
-
-// using the rest parameter for arbituary number of arguments
-const myFunc = (...args) => args.length;
-
-// the spread operator expands iterables in places where zero or more arguments are expected (into comma-separated list)
-const nums = [1,2,3];
-console.log(sum(...nums));
-console.log(sum.apply(null, nums));
-
-// Destructuring statement
-const { prop1, prop2 } = obj;
-// Assign new varialbes names
-const { prop1: newProp1, prop2: newProp2 } = obj;
-
-// Destructure Arrays 
-const [a, b, , d] = [d, c, b, a];  // a=d, b=c, d=a
-
-// w/ the rest operator
-const [,, ...removeFirstTwo] = [1, 2, 3, 4, 5, 7];  // removeFirstTwo = [3, 4, 5, 7]
-```
-```
-// create strings with Template Literals
-const greeting = `Hello, my name is ${person.name}!
-I am ${person.age} years old.`;
-
-```
