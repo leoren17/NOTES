@@ -50,6 +50,43 @@ Math.floor(Math.random() * (max - min + 1)) + min
 parseInt(str, radix);
 // conditional operator (a ? b : c)
 ```
+- the equality operator (==) performs type coercions
+- the strict equality operator (===) does not perform type coercions
+```
+str.length
+str[0]
+ReactDOM.render(JSX, document.getElementById('root'))
+let string = "" + 23;
+```
+Export / Import
+```
+<script type="module" src="index.js"></script>
+export { func0, func1 };
+import { func0, func1 } from './index.js';
+import * as funcs from "./index.js";
+
+export defalut function func0() {}
+import anyName from "./index.js";
+```
+Promise
+```
+const p = new Promise((resolve, reject) => {
+  if(condition) {
+    resolve();
+  }
+  else {
+    reject();
+  }
+});
+// then is executed after resolve is called
+// result comes from the argument given to the resolve method
+p.then(result => {
+});
+// catch is executed after reject is called
+// error comes from the argument given to the reject method
+p.catch(error => {
+});
+```
 ---
 ### Objects 
 ```
@@ -86,17 +123,29 @@ return obj.hasOwnProperty(propName);
 // This doesn't work! Argument needs to be in ""
 return obj.hasOwnProperty(prop1);
 ```
+Setters and Getters:
+```
+class Object {
+  constructor(prop1) {
+    this._prop1 = prop1;
+  }
 
+  get prop1() {
+    return this._prop1;
+  }
+
+  set prop1(updatedProp1) {
+    this._prop1 = updatedProp1;
+  }
+}
+
+const obj = new Object("p1");
+console.log(obj.prop1);
+obj.prop1 = "newP1";
+console.log(obj.prop1);
+```
 
 ---
-- the equality operator (==) performs type coercions
-- the strict equality operator (===) does not perform type coercions
-```
-str.length
-str[0]
-ReactDOM.render(JSX, document.getElementById('root'))
-let string = "" + 23;
-```
 Array methods:
 ```
 let myArray = [];                       // []
