@@ -1,0 +1,5 @@
+### JSX
+```
+{/* comment */}
+ReactDOM.render();
+```
