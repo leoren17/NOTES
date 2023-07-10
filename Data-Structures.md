@@ -17,6 +17,10 @@ arr.splice(0,0,{},{},{});               // [{},{},{},3,4,5]
 // use slice(start, end) to copy elements without modifying the original
 const arr = [0,1,2,3,4,5]
 arr = arr.slice(2,3);                   // [2]
+
+// use toString() and join("seperator") to return a string representation
+let text = arr.join(" and ");
+
 ```
 ---
 ### Objects 
