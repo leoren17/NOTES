@@ -66,6 +66,7 @@ import { func0, func1 } from './index.js';
 import * as funcs from "./index.js";
 
 export defalut function func0() {}
+// or export defalut func0;
 import anyName from "./index.js";
 ```
 Promise
