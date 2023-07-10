@@ -98,7 +98,16 @@ function sum(a, b) {
   console.log("Hello World");
   return a + b;
 }
-let three = sum(1, 2);  
+============================>
+const sum = function (a,b) {
+  return a + b;
+}
+============================>
+const sum = (a,b) => {
+  return a + b;
+}
+============================>
+let three = sum(1, 2);
 ```
 ---
 
