@@ -55,7 +55,6 @@ parseInt(str, radix);
 ```
 str.length
 str[0]
-ReactDOM.render(JSX, document.getElementById('root'))
 let string = "" + 23;
 ```
 Export / Import
