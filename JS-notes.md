@@ -1,6 +1,13 @@
 ### OOP
 
 ### Arrow Function (ES6):
+- **this** value in arrow functions are determined by based on the lexical scope (ability to access variables from its parent scope)
+  
+[understanding arrow functions](https://www.digitalocean.com/community/tutorials/understanding-arrow-functions-in-javascript)
+
+[this keyword explanation](https://www.digitalocean.com/community/conceptual-articles/understanding-this-bind-call-and-apply-in-javascript)
+
+[arrow function doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 ```
 const myFunc = () => {
   let a = 123;
@@ -91,7 +98,11 @@ p.catch(error => {
 
 ---
 
-Function:
+### Function:
+- closures
+- when a function is declared inside another function,
+- the inner function can access variables in the scope of the outer function even after the outer function finishes executing (lexical scope)
+- useful for creating private variables and functions
 ```
 function sum(a, b) {
   console.log("Hello World");
@@ -106,7 +117,8 @@ const sum = (a,b) => {
   return a + b;
 }
 ============================>
-let three = sum(1, 2);
+// self-invokinf function
+((a,b) => a + b; )(2,3);
 ```
 ---
 
