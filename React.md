@@ -7,7 +7,7 @@ use 'ctrl + /' as shortcut to add comment
 {/* all elements must be closed (<br> => <br />) */}
 {/* use curly braces {} to include JavaScript within JSX */}
 ReactDOM.render(componentToRender, targetContainerNode)
-React.createElement(type, props, ...children)
+React.createElement(type, props, ...children) // this is what JSX is converted to when compiled
 ```
 ### Create a Controlled Input
 
@@ -27,7 +27,7 @@ class StatefulComponent extends React.Component {
 
   
   // never modify state directly; always use this.setState(); accepts object or function as the argument
-  // To fix asynchronus state updates, use a second form of setState() that accepts a function rather than an object.
+  // To fix asynchronus state updates, use a second form of setState() that accepts a callback function rather than an object.
   // That function will receive the previous state as the first argument, and the props at the time the update is applied as the second argument:
 
   handleClick() {
@@ -103,6 +103,9 @@ class ParentComponent extends React.Component {
 ## HTML DOM (Document Object Model) - constructed as a tree of objects(or nodes)
 Lets you access and change all the elements in an HTML document
 
+### Events
+[DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp)
+
 ### Methods
 ```
 document.getElementById()
@@ -118,7 +121,18 @@ document.getElementById(id).onclick = function(){code}
 .style.property
 ```
 
+
 ## Random
+[function scope](https://stackoverflow.com/questions/33040703/proper-use-of-const-for-defining-functions)
+- using const before a function declaration makes it a function expression
+- this means the function is not hoisted to the top and now has block scope instead of full lexical scope
+  
+[understand callbacks](https://dev.to/i3uckwheat/understanding-callbacks-2o9e)
+- callbacks are functions passed into other functions as arguments
+- so declaring callbacks are the same syntax as declaring regular functions,
+- the parameters in the callbacks (like e or prevState) are passed into another function (like .addEventListener) as arguments
+- (so in the implementation of .addEventListener, the callback is called/executed with event as the argument)
+- (we need to know what the callback is using as the arguments so we can write the callback with the correct parameter names)
 ```
 ++a is equivalent to a += 1
 be careful with a++
