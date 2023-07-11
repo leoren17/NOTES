@@ -9,9 +9,13 @@ use 'ctrl + /' as shortcut to add comment
 ReactDOM.render(componentToRender, targetContainerNode)
 React.createElement(type, props, ...children) // this is what JSX is converted to when compiled
 ```
-### Create a Controlled Input
-
+### Event Listener
+[why handleClick instead of handleClick()](https://stackoverflow.com/questions/64943885/why-does-a-react-jsx-element-event-handler-not-use-parentheses-similar-to-a-html)
 ```
+handleClick(e) {}
+onclick={this.handleClick}
+=== equivalent to
+addEventListener('click', this.handleClick)
 ```
 
 ### Create Stateful Components
