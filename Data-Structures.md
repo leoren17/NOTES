@@ -21,6 +21,9 @@ arr = arr.slice(2,3);                   // [2]
 // use toString() and join("seperator") to return a string representation
 let text = arr.join(" and ");
 
+// use the spread operator (...) to combine arrays
+let newArr = [1, 2, ...oldArr, 9, 10];
+
 ```
 ---
 ### Objects 
