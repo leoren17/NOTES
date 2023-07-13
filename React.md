@@ -1,5 +1,10 @@
 ## JSX
-[State Explanation](https://www.freecodecamp.org/news/what-is-state-in-react-explained-with-examples/)
+<a href="https://www.freecodecamp.org/news/what-is-state-in-react-explained-with-examples/">State Explanation</a>
+<br />
+<a href="https://stackoverflow.com/questions/27991366/what-is-the-difference-between-state-and-props-in-react" target="_blank">State vs. Props</a>
+<br />
+<a href="https://stackoverflow.com/questions/36097965/when-to-use-es6-class-based-react-components-vs-functional-es6-react-components" target="_blank">
+Function or Class Components?</a>
 ```
 use 'ctrl + /' as shortcut to add comment
 {/* try to minimize statefulness */}
@@ -9,13 +14,31 @@ use 'ctrl + /' as shortcut to add comment
 ReactDOM.render(componentToRender, targetContainerNode)
 React.createElement(type, props, ...children) // this is what JSX is converted to when compiled
 ```
+### React Notes
+- <i>Unidirectional data flow</i> (state flows in one direction down the component tree)
+- Separate state logic from UI logic (maybe you only need one stateful component?)
+- 
+
+### React Lifecycle
+- place API calls in componentDidMount()
+- add event listeners for the document and window object in componentDidMount()
+  - click is the event
+  - onClick is the event listener
+  - handleClick is the event handler
+  - document.addEventListner("click", this.handleClick);
+- remove event listeners in componentWillUnmount()
+- .
+- use shouldComponentUpdate(nextProps, nextState) -> bool to determine if component should update based on next props and state
+
+
 ### Event Listener
 [why handleClick instead of handleClick()](https://stackoverflow.com/questions/64943885/why-does-a-react-jsx-element-event-handler-not-use-parentheses-similar-to-a-html)
 ```
 handleClick(e) {}
-onclick={this.handleClick}
+
+... onclick={this.handleClick} ...
 === equivalent to
-addEventListener('click', this.handleClick)
+element.addEventListener("click", this.handleClick)
 ```
 
 ### Create Stateful Components
@@ -131,7 +154,7 @@ document.getElementById(id).onclick = function(){code}
 - using const before a function declaration makes it a function expression
 - this means the function is not hoisted to the top and now has block scope instead of full lexical scope
   
-[understand callbacks](https://dev.to/i3uckwheat/understanding-callbacks-2o9e)
+[Understand Callbacks and Event Listeners](https://dev.to/i3uckwheat/understanding-callbacks-2o9e)
 - callbacks are functions passed into other functions as arguments
 - so declaring callbacks are the same syntax as declaring regular functions,
 - the parameters in the callbacks (like e or prevState) are passed into another function (like .addEventListener) as arguments
@@ -140,5 +163,20 @@ document.getElementById(id).onclick = function(){code}
 ```
 ++a is equivalent to a += 1
 be careful with a++
+```
+
+### Conditionals in JSX
+```
+{ condition && <div>...</div>}
+{ condition ? expressionIfTrue : expressionIfFalse; }
+
+```
+
+### Inline Styles
+```
+// HTML
+<div style="color: yellow; font-size: 16px">
+// React
+<div style={{color: "yellow", fontSize: "16px"}}>
 ```
 
