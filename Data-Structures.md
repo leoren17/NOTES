@@ -24,6 +24,9 @@ let text = arr.join(" and ");
 // use the spread operator (...) to combine arrays
 let newArr = [1, 2, ...oldArr, 9, 10];
 
+// use indexOf() to check position of ele in arr
+let index = arr.indexOf(ele);
+
 ```
 ---
 ### Objects 
