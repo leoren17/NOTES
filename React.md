@@ -167,6 +167,8 @@ be careful with a++
 
 ### Conditionals in JSX
 ```
+// can't use if/else in the return statement because can't use if/else in JSX,
+// however, the ternary operator can be used in JSX
 { condition && <div>...</div>}
 { condition ? expressionIfTrue : expressionIfFalse; }
 
