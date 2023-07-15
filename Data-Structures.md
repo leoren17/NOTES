@@ -24,8 +24,10 @@ let text = arr.join(" and ");
 // use the spread operator (...) to combine arrays
 let newArr = [1, 2, ...oldArr, 9, 10];
 
-// use indexOf() to check position of ele in arr
+// use indexOf() to check position of ele in arr; doesn't exist returns -1
 let index = arr.indexOf(ele);
+
+// use every(), forEach(), map() to iterate through elements in an array
 
 ```
 ---
