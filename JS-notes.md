@@ -59,11 +59,7 @@ parseInt(str, radix);
 ```
 - the equality operator (==) performs type coercions
 - the strict equality operator (===) does not perform type coercions
-```
-str.length
-str[0]
-let string = "" + 23;
-```
+
 Export / Import
 ```
 <script type="module" src="index.js"></script>
