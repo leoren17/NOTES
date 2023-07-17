@@ -1,3 +1,4 @@
+Use ```ReactDOMServer.renderToString(<App />)``` to render a React component on the server instead of client
 ## JSX
 <a href="https://www.freecodecamp.org/news/what-is-state-in-react-explained-with-examples/">State Explanation</a>
 <br />
@@ -126,7 +127,7 @@ class ParentComponent extends React.Component {
 }
 ```
 
-
+---
 ## HTML DOM (Document Object Model) - constructed as a tree of objects(or nodes)
 Lets you access and change all the elements in an HTML document
 
@@ -148,7 +149,7 @@ document.getElementById(id).onclick = function(){code}
 .style.property
 ```
 
-
+---
 ## Random
 [function scope](https://stackoverflow.com/questions/33040703/proper-use-of-const-for-defining-functions)
 - using const before a function declaration makes it a function expression
