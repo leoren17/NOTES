@@ -1,4 +1,20 @@
 
+### String methods:
+- (slice vs substring)[https://stackoverflow.com/questions/2243824/what-is-the-difference-between-string-slice-and-string-substring]
+```
+str.length
+str[0]
+let string = "" + 23;
+
+// split str into array of substrings separated by separator
+let arr = str.split("");
+
+// reverse str
+str.split("").reverse().join("")
+[...str].reverse()/join("")
+
+str.slice(start, end);
+```
 ### Array methods:
 ```
 let myArray = [];                       // []
@@ -21,17 +37,22 @@ arr = arr.slice(2,3);                   // [2]
 // use toString() and join("seperator") to return a string representation
 let text = arr.join(" and ");
 
-// use the spread operator (...) to combine arrays
+// use the spread operator (...) to combine arrays 
 let newArr = [1, 2, ...oldArr, 9, 10];
 
 // use indexOf() to check position of ele in arr; doesn't exist returns -1
 let index = arr.indexOf(ele);
 
 // use every(), forEach(), map() to iterate through elements in an array
+// use reverse() to reverse array
+
+// use map(callbackFn)
 
 ```
 ---
 ### Objects 
+- collections of key-value (property-data) pairs
+- does not maintain an ordering to stored keys like arrays do
 ```
 const obj = {
   123: "",
@@ -41,8 +62,10 @@ const obj = {
 ```
 Access properties:
 ```
+// dot notation
 let a = obj.prop1;
 
+// bracket notation
 let propName = "prop 1";
 let b = obj[propName];
 // or
@@ -62,10 +85,25 @@ Lookup if property exists:
 ```
 let propName = "prop1";
 return obj.hasOwnProperty(propName);
+// or
+return propName in obj;
 
-// This doesn't work! Argument needs to be in ""
+// This doesn't work! Argument needs to be a variable or in ""
 return obj.hasOwnProperty(prop1);
 ```
+
+Iterate through keys in obj:
+```
+for (const user in allUsers) {
+  console.log(user, allUsers[user]);
+}
+```
+
+Get array of properties from obj:
+```
+let arr = Object.keys(obj);
+```
+
 Setters and Getters:
 ```
 class Object {
