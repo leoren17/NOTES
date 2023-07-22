@@ -166,6 +166,14 @@ document.getElementById(id).onclick = function(){code}
 be careful with a++
 ```
 
+```
+// evaluate string as math expression?
+function addbits(s) {
+    return (s.replace(/\s/g, '').match(/[+\-]?([0-9\.]+)/g) || [])
+        .reduce((sum, value) => parseFloat(sum) + parseFloat(value));
+}
+```
+
 ### Conditionals in JSX
 ```
 // can't use if/else in the return statement because can't use if/else in JSX,
