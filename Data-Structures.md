@@ -5,13 +5,15 @@
 str.length
 str[0]
 let string = "" + 23;
+number.toString();
+Number(string);
 
 // split str into array of substrings separated by separator
 let arr = str.split("");
 
 // reverse str
 str.split("").reverse().join("")
-[...str].reverse()/join("")
+[...str].reverse().join("")
 
 str.slice(start, end);
 ```
