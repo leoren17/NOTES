@@ -1,7 +1,7 @@
 ### OOP
 
 ### Arrow Function (ES6):
-- **this** value in arrow functions are determined by based on the lexical scope (ability to access variables from its parent scope)
+- **this** value in arrow functions is determined based on the lexical scope (ability to access variables from its parent scope)
   
 [understanding arrow functions](https://www.digitalocean.com/community/tutorials/understanding-arrow-functions-in-javascript)
 
@@ -113,7 +113,7 @@ const sum = (a,b) => {
   return a + b;
 }
 ============================>
-// self-invokinf function
+// self-invoking function
 ((a,b) => a + b; )(2,3);
 ```
 ---
