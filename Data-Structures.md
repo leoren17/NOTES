@@ -49,7 +49,14 @@ let index = arr.indexOf(ele);
 // use reverse() to reverse array
 
 // use map(callbackFn)
+// use filter(callbackFn)
+const arr = [1,2,3,4,5]
 
+arr.filter(bigEnough);
+
+const bigEnough = (arrElement, index, array) => {
+  return arrElement > 3;
+}
 ```
 ---
 ### Objects 
