@@ -39,6 +39,8 @@ To use:
   * align-items: flex-start; (stretch, center, etc.)
   * align-content: flex-start; (stretch, center, etc.)
 
+- Grid: 
+
 ## Using media query (@media)
 Conditionally apply CSS
 ```
