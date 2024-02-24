@@ -39,7 +39,18 @@ To use:
   * align-items: flex-start; (stretch, center, etc.)
   * align-content: flex-start; (stretch, center, etc.)
 
-- Grid: 
+- Grid container:
+  * display: grid;
+  * grid-template-columns: 1fr 94rem 1fr; (repeat(3, 1fr);)
+  * row-gap: 3rem;
+  * column-gap: 3rem;
+  * align-items: center
+  * justify-items: center
+  * .
+  * column-width: 25rem; (can use w/o being a grid container)
+- Grid children:
+  * grid-column: 1 / -1;  (which grid line to start and end at)
+  * 
 
 ## Using media query (@media)
 Conditionally apply CSS
