@@ -7,3 +7,4 @@
 - Plus One (arrays are objects so cannot compare using ==)
 - [how to compare arrays](https://www.freecodecamp.org/news/how-to-compare-arrays-in-javascript/)
 - [break out of every and find](https://masteringjs.io/tutorials/fundamentals/foreach-break)
+- Move Zeros (https://stackoverflow.com/questions/37318808/what-is-the-in-place-alternative-to-array-prototype-filter)
