@@ -4,3 +4,5 @@
 - Intersection of Two Arrays
 - Two Sum (use hash table to quickly find target - first element)
 - contains duplicate
+- Plus One (arrays are objects so cannot compare using ==)
+- [how to compare arrays](https://www.freecodecamp.org/news/how-to-compare-arrays-in-javascript/)
