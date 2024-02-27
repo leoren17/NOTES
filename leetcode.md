@@ -8,3 +8,7 @@
 - [how to compare arrays](https://www.freecodecamp.org/news/how-to-compare-arrays-in-javascript/)
 - [break out of every and find](https://masteringjs.io/tutorials/fundamentals/foreach-break)
 - Move Zeros (https://stackoverflow.com/questions/37318808/what-is-the-in-place-alternative-to-array-prototype-filter)
+
+# Strings
+- (https://2ality.com/2012/02/js-integers.html)
+- 
