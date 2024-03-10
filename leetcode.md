@@ -14,3 +14,4 @@
 - (https://www.geeksforgeeks.org/different-ways-to-represent-signed-integer/)
 - reverse string
 - reverse integer
+- First Unique Character
