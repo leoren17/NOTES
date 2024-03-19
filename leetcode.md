@@ -15,3 +15,4 @@
 - reverse string
 - reverse integer
 - First Unique Character
+- Valid Palindrome
