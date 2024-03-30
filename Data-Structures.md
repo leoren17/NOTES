@@ -1,4 +1,5 @@
-
+### Primitive Values: String, Number, Boolean, Null, Undefined
+### Object Values: Array, Object
 ### String methods:
 - (slice vs substring)[https://stackoverflow.com/questions/2243824/what-is-the-difference-between-string-slice-and-string-substring]
 ```
